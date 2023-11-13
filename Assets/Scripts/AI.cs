@@ -22,7 +22,7 @@ public class AI : MonoBehaviour
 
     private void Start() {
         float addic = Random.Range(-5f,5f);
-        weighths += addic/gm.preset.cycle;
+        weighths = (weighths + addic)/gm.preset.cycle;
         
     }
 
